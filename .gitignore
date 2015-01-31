@@ -1,14 +1,60 @@
-bin
-.metadata
-target
-.searchable
+*.o
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+build/
+gen/
+target/
 screenshots/
 
-# You can use wildcards as well
+# Gradle/IntelliJ
+*.iml
+.idea/
+.gradle/
 
-# For example Unix editors 
-# sometimes make file copies ending
-# with ~
-# To ignore them use:
+# Local configuration file (sdk path, etc)
+local.properties
 
-*~
+*.pydevproject
+.project
+.metadata
+.DS_Store
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+actionbarsherlock/build/
+dSploit/build/
+.gradle/
+.idea/workspace.xml
+.searchable
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+/obj
