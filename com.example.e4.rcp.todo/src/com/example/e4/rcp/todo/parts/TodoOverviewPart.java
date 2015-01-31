@@ -17,8 +17,8 @@ import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.di.UIEventTopic;
 import org.eclipse.e4.ui.di.UISynchronize;
 import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
+import org.eclipse.e4.ui.services.EMenuService;
 import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
-import org.eclipse.e4.ui.workbench.swt.modeling.EMenuService;
 import org.eclipse.jface.databinding.viewers.ViewerSupport;
 import org.eclipse.jface.viewers.CellEditor;
 import org.eclipse.jface.viewers.EditingSupport;
@@ -158,7 +158,7 @@ public class TodoOverviewPart {
 				return true;
 			}
 		});
-		TableViewerColumn colDescription= new TableViewerColumn(viewer, SWT.NONE);
+		TableViewerColumn colDescription = new TableViewerColumn(viewer, SWT.NONE);
 
 		colDescription.getColumn().setWidth(100);
 		colDescription.getColumn().setText("Description");
@@ -193,7 +193,6 @@ public class TodoOverviewPart {
 
 	}
 
-	
 	@Inject
 	@Optional
 	private void getNotified(
@@ -208,5 +207,4 @@ public class TodoOverviewPart {
 	private void setFocus() {
 		btnNewButton.setFocus();
 	}
-
 }
