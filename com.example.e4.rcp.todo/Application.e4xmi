@@ -37,6 +37,11 @@
           <children xsi:type="advanced:Placeholder" xmi:id="_6qW9gA5xEeK9y8PCk5W1FQ" elementId="com.example.e4.rcp.todo.placeholder.1" ref="_0Aiw4A5xEeK9y8PCk5W1FQ"/>
         </children>
       </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_3v3DYKmDEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.perspective.network" label="Network">
+        <children xsi:type="basic:PartStack" xmi:id="_dydMkKmLEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.partstack.3" accessibilityPhrase="">
+          <children xsi:type="basic:Part" xmi:id="_Xv_T0KmLEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.part.networkMonitor" contributionURI="bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.parts.NetworkViewPart" label="Network Monitor"/>
+        </children>
+      </children>
     </children>
     <variables>shellMaximized</variables>
     <mainMenu xmi:id="_TbH8MMZXEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.main.menu">
