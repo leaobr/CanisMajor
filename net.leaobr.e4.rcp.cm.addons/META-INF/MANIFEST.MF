@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Addons
-Bundle-SymbolicName: com.example.e4.rcp.todo.addons
+Bundle-SymbolicName: net.leaobr.e4.rcp.cm.addons
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: EXAMPLE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
