@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.example.e4.rcp</groupId>
+	<groupId>net.leaobr.e4.rcp</groupId>
 	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -21,32 +21,28 @@
 
 	<modules>
 		<!-- target -->
-		<module>com.example.e4.rcp.todo.target</module>
+		<module>net.leaobr.e4.rcp.cm.target</module>
 
 		<!-- bundles -->
-		<module>com.example.e4.bundleresourceloader</module>
-		<module>com.example.e4.rcp.todo</module>
-		<module>com.example.e4.rcp.todo.model</module>
-		<module>com.example.e4.rcp.todo.addons</module>
-		<module>com.example.e4.rcp.todo.contribute</module>
-		<module>com.example.e4.rcp.todo.events</module>
-		<module>com.example.e4.rcp.todo.i18n</module>
-		<module>com.example.e4.rcp.todo.ownannotation</module>
-		<module>com.example.e4.rcp.todo.service</module>
-		<module>com.example.e4.renderer.swt</module>
-
-		<!-- Junit tests -->
-		<module>com.example.e4.rcp.todo.model.test</module>
+		<module>net.leaobr.e4.bundleresourceloader</module>
+		<module>net.leaobr.e4.rcp.cm</module>
+		<module>net.leaobr.e4.rcp.cm.model</module>
+		<module>net.leaobr.e4.rcp.cm.addons</module>
+		<module>net.leaobr.e4.rcp.cm.contribute</module>
+		<module>net.leaobr.e4.rcp.cm.events</module>
+		<module>net.leaobr.e4.rcp.cm.i18n</module>
+		<module>net.leaobr.e4.rcp.cm.service</module>
+		<module>net.leaobr.e4.renderer.swt</module>
 
 		<!-- features -->
-		<module>com.example.e4.rcp.todo.feature</module>
+		<module>net.leaobr.e4.rcp.cm.feature</module>
 
 		<!-- p2 repository for updates -->
 
 		<!-- product related -->
-		<module>com.example.e4.rcp.todo.product</module>
-		<module>com.vogella.extensionpoint.contribution</module>
-		<module>com.vogella.extensionpoint.definition</module>
+		<module>net.leaobr.e4.rcp.cm.product</module>
+		<module>net.leaobr.extensionpoint.contribution</module>
+		<module>net.leaobr.extensionpoint.definition</module>
 
 	</modules>
 
@@ -127,8 +123,8 @@
 					<!-- use existing target platform definition -->
 					<target>
 						<artifact>
-							<groupId>com.example.e4.rcp</groupId>
-							<artifactId>com.example.e4.rcp.todo.target</artifactId>
+							<groupId>net.leaobr.e4.rcp</groupId>
+							<artifactId>net.leaobr.e4.rcp.cm.target</artifactId>
 							<version>1.0.0-SNAPSHOT</version>
 							<classifier>eclipse4rcp</classifier>
 						</artifact>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="Canis Major">
+         <property
+               name="appName"
+               value="Canis Major">
+         </property>
+        
+          -->
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://net.leaobr.e4.rcp.cm/net.leaobr.e4.rcp.cm.lifecycle.Manager">
+         </property>
+          <!-- comments out of testing purposes
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/net.leaobr.e4.rcp.cm/css/rainbow.css">
+         </property>
+         
+         <property
+               name="rendererFactoryUri"
+               value="bundleclass://net.leaobr.e4.renderer.swt/net.leaobr.e4.renderer.swt.MyRendererFactory">
+         </property>
+         -->
+         <!-- commented to simplify SWTBot test example
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://net.leaobr.e4.rcp.cm/net.leaobr.e4.rcp.cm.lifecycle.LifeCycleManager">
+         </property>
+         -->
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/default.css"
+            id="net.leaobr.e4.rcp.cm.default"
+            label="Default Theme">
+      </theme>
+      <theme
+            basestylesheeturi="css/rainbow.css"
+            id="net.leaobr.e4.rcp.cm.rainbow"
+            label="Rainbow">
+      </theme>
+   </extension>
+ 
+
+</plugin>
