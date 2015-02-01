@@ -2,6 +2,11 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kRdLcL-ZEeGFAvs8os6Opw" elementId="com.example.e4.rcp.todo.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_3wev8L-ZEeGFAvs8os6Opw" elementId="com.example.e4.rcp.todo.trimmedwindow" label="To-do" x="100" y="100" width="800" height="600">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_JajEUL-iEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_3v3DYKmDEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.perspective.network" label="Network">
+        <children xsi:type="basic:PartStack" xmi:id="_dydMkKmLEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.partstack.3" accessibilityPhrase="">
+          <children xsi:type="basic:Part" xmi:id="_Xv_T0KmLEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.part.networkMonitor" contributionURI="bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.parts.NetworkViewPart" label="Network Monitor"/>
+        </children>
+      </children>
       <children xsi:type="advanced:Perspective" xmi:id="_KqWfUL-iEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.perspective" label="To-Do">
         <children xsi:type="basic:PartSashContainer" xmi:id="_p7QWcL-iEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.partsashcontainer.main" horizontal="true">
           <children xsi:type="basic:PartSashContainer" xmi:id="_8TWJ8AzDEeKhVv5pZDR7bA" elementId="com.example.e4.rcp.todo.partsashcontainer.1" containerData="40">
@@ -37,11 +42,6 @@
           <children xsi:type="advanced:Placeholder" xmi:id="_6qW9gA5xEeK9y8PCk5W1FQ" elementId="com.example.e4.rcp.todo.placeholder.1" ref="_0Aiw4A5xEeK9y8PCk5W1FQ"/>
         </children>
       </children>
-      <children xsi:type="advanced:Perspective" xmi:id="_3v3DYKmDEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.perspective.network" label="Network">
-        <children xsi:type="basic:PartStack" xmi:id="_dydMkKmLEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.partstack.3" accessibilityPhrase="">
-          <children xsi:type="basic:Part" xmi:id="_Xv_T0KmLEeSOudIsA5fESg" elementId="com.example.e4.rcp.todo.part.networkMonitor" contributionURI="bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.parts.NetworkViewPart" label="Network Monitor"/>
-        </children>
-      </children>
     </children>
     <variables>shellMaximized</variables>
     <mainMenu xmi:id="_TbH8MMZXEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.main.menu">
@@ -58,7 +58,7 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_LxYWQA1pEeKOKKJWLEQDhw" elementId="com.example.e4.rcp.todo.handledmenuitem.2" label="Edit Todo" command="_vGK5kA1pEeKkaoNsQKzVcw"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_UQ8gMBAKEeO5vsQ2T1hWpw" elementId="com.example.e4.rcp.todo.menu.0" label="Window">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_U9_icA37EeK2jbXfW93tpw" elementId="com.example.e4.rcp.todo.handledmenuitem.3" label="Switch Perspective" command="_W75ZkA37EeK2jbXfW93tpw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_U9_icA37EeK2jbXfW93tpw" elementId="com.example.e4.rcp.todo.handledmenuitem.3" visible="false" label="Switch Perspective" command="_W75ZkA37EeK2jbXfW93tpw"/>
         <children xsi:type="menu:Menu" xmi:id="_dd1GgBAKEeO5vsQ2T1hWpw" elementId="com.example.e4.rcp.todo.menu.1" label="Show View">
           <children xsi:type="menu:HandledMenuItem" xmi:id="_e8tfUBAKEeO5vsQ2T1hWpw" elementId="com.example.e4.rcp.todo.handledmenuitem.5" label="Create Part (based on Descriptor)" command="_H4GNQAzJEeKhVv5pZDR7bA"/>
           <children xsi:type="menu:HandledMenuItem" xmi:id="_lN9a8BAKEeO5vsQ2T1hWpw" elementId="com.example.e4.rcp.todo.handledmenuitem.6" label="Create Part (dynamically)" command="_n9YOkBAKEeO5vsQ2T1hWpw"/>
