@@ -1,7 +1,8 @@
 package com.example.e4.rcp.todo.parts;
 
-import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -18,6 +19,12 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.nmap4j.Nmap4j;
+import org.nmap4j.core.nmap.NMapExecutionException;
+import org.nmap4j.core.nmap.NMapInitializationException;
+import org.nmap4j.data.NMapRun;
+import org.nmap4j.data.host.Hostnames;
+import org.nmap4j.data.nmaprun.Host;
+import org.nmap4j.data.nmaprun.hostnames.Hostname;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.FrameworkUtil;
 
@@ -25,15 +32,25 @@ public class NetworkViewPart implements ITreeContentProvider {
 	private TreeViewer viewer;
 	private Image image;
 	private Nmap4j nmap4j;
+	private NMapRun nmapRun;
 
 	@PostConstruct
 	public void createControls(Composite parent) {
 		createImage();
 		viewer = new TreeViewer(parent, SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL);
+		nmap4j = new Nmap4j("/usr/local");
+		nmap4j.addFlags("-sn -PR");
+		nmap4j.includeHosts("192.168.1.0/24");
+		try {
+			nmap4j.execute();
+		} catch (NMapInitializationException e) {
+			e.printStackTrace();
+		} catch (NMapExecutionException e) {
+			e.printStackTrace();
+		}
 		viewer.setContentProvider(new ViewContentProvider());
 		viewer.setLabelProvider(new ViewLabelProvider());
-		viewer.setInput(File.listRoots());
-		nmap4j = new Nmap4j("/usr/local");
+		viewer.setInput(new Host());
 	}
 
 	private void createImage() {
@@ -45,31 +62,25 @@ public class NetworkViewPart implements ITreeContentProvider {
 
 	@Override
 	public void inputChanged(Viewer viewer, Object oldInput, Object newInput) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public Object[] getElements(Object inputElement) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Object[] getChildren(Object parentElement) {
-		// TODO Auto-generated method stub
-		return null;
+		return nmapRun.getHosts().toArray();
 	}
 
 	@Override
 	public Object getParent(Object element) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean hasChildren(Object element) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
@@ -93,27 +104,26 @@ public class NetworkViewPart implements ITreeContentProvider {
 
 		@Override
 		public Object[] getElements(Object inputElement) {
-			return (File[]) inputElement;
+			List<Object> children = new ArrayList<Object>();
+			if (!nmap4j.hasError()) {
+				nmapRun = nmap4j.getResult();
+				children.addAll(nmapRun.getHosts());
+			}//TODO see what happens when nmap4j has errors
+			return children.toArray();
 		}
 
 		@Override
 		public Object[] getChildren(Object parentElement) {
-			File file = (File) parentElement;
-			return file.listFiles();
+			return null;
 		}
 
 		@Override
 		public Object getParent(Object element) {
-			File file = (File) element;
-			return file.getParentFile();
+			return null;
 		}
 
 		@Override
 		public boolean hasChildren(Object element) {
-			File file = (File) element;
-			if (file.isDirectory()) {
-				return true;
-			}
 			return false;
 		}
 
@@ -122,17 +132,14 @@ public class NetworkViewPart implements ITreeContentProvider {
 	class ViewLabelProvider extends LabelProvider {
 		@Override
 		public String getText(Object element) {
-			File file = (File) element;
-			String name = file.getName();
-			return name.isEmpty() ? file.getPath() : name;
+			Host host = (Host) element;
+			Hostnames hostNames = host.getHostnames();
+			Hostname hostName = hostNames != null ? hostNames.getHostname() : null;
+			return hostName == null ? host.getAddresses().get(0).getAddr() : hostName.getName();
 		}
 
 		public Image getImage(Object element) {
-			File file = (File) element;
-			if (file.isDirectory()) {
-				return image;
-			}
-			return null;
+			return image;
 		}
 	}
 }
