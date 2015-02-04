@@ -16,12 +16,15 @@
       </children>
     </mainMenu>
     <trimBars xmi:id="_5T5nwMZuEeGbkqRLZ7osPQ" elementId="net.leaobr.e4.rcp.cm.trimbar.first">
-      <children xsi:type="menu:ToolBar" xmi:id="_7hjLEMZuEeGbkqRLZ7osPQ" elementId="net.leaobr.e4.rcp.cm.toolbar.0"/>
+      <children xsi:type="menu:ToolBar" xmi:id="_7hjLEMZuEeGbkqRLZ7osPQ" elementId="net.leaobr.e4.rcp.cm.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_U6VRsKxyEeSZsaT4n1mzXg" elementId="net.leaobr.e4.rcp.cm.handledtoolitem.run" label="Run" iconURI="platform:/plugin/net.leaobr.e4.rcp.cm/images/run-button.png" command="_3wCsUKxyEeSZsaT4n1mzXg"/>
+      </children>
     </trimBars>
   </children>
   <handlers xmi:id="_rB5CEMZrEeGbkqRLZ7osPQ" elementId="net.leaobr.e4.rcp.cm.handlers.exit" contributionURI="bundleclass://net.leaobr.e4.rcp.cm/net.leaobr.e4.rcp.cm.handlers.ExitHandler" command="_F8KnQMZYEeGbkqRLZ7osPQ"/>
   <rootContext xmi:id="_2jk_wMZvEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="Windows and Dialogs" description="Windows and Dialogs"/>
   <commands xmi:id="_F8KnQMZYEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_3wCsUKxyEeSZsaT4n1mzXg" elementId="net.leaobr.rcp.cm.command.run" commandName="Run"/>
   <addons xmi:id="_kRdLcb-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_kRdLcr-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_kRdLc7-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
