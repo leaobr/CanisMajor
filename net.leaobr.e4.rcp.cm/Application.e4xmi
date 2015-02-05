@@ -22,6 +22,7 @@
     </trimBars>
   </children>
   <handlers xmi:id="_rB5CEMZrEeGbkqRLZ7osPQ" elementId="net.leaobr.e4.rcp.cm.handlers.exit" contributionURI="bundleclass://net.leaobr.e4.rcp.cm/net.leaobr.e4.rcp.cm.handlers.ExitHandler" command="_F8KnQMZYEeGbkqRLZ7osPQ"/>
+  <handlers xmi:id="_oEWGUKywEeSQ9vrYgklZlw" elementId="net.leaobr.e4.rcp.cm.handler.run" contributionURI="bundleclass://net.leaobr.e4.rcp.cm/net.leaobr.e4.rcp.cm.handlers.RunHandler" command="_3wCsUKxyEeSZsaT4n1mzXg"/>
   <rootContext xmi:id="_2jk_wMZvEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="Windows and Dialogs" description="Windows and Dialogs"/>
   <commands xmi:id="_F8KnQMZYEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
   <commands xmi:id="_3wCsUKxyEeSZsaT4n1mzXg" elementId="net.leaobr.rcp.cm.command.run" commandName="Run"/>

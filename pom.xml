@@ -44,6 +44,9 @@
 		<module>net.leaobr.extensionpoint.contribution</module>
 		<module>net.leaobr.extensionpoint.definition</module>
 
+		<!-- third party -->
+		<module>thirdparty/nmap4j</module>
+
 	</modules>
 
 	<!-- tycho requires maven >= 3.0 -->
