@@ -126,7 +126,7 @@ public class NMapExecutor {
             results.setExecutedCommand( command.toString() ) ;
             Process process = Runtime.getRuntime().exec( command.toString() ) ;
 
-            results.setErrors( convertStream( process.getErrorStream() ) ) ;
+            //results.setErrors( convertStream( process.getErrorStream() ) ) ;
             results.setOutput( convertStream( process.getInputStream() ) ) ;
 
         } catch ( IOException e ) {

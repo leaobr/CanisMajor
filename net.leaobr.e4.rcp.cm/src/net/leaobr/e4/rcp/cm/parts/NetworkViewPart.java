@@ -140,7 +140,7 @@ public class NetworkViewPart implements ITreeContentProvider {
 		@Override
 		public Object[] getElements(Object inputElement) {
 			List<Object> children = new ArrayList<Object>();
-			if (nmap4j != null && !nmap4j.hasError()) {
+			if (nmap4j != null) {
 				nmapRun = nmap4j.getResult();
 				children.addAll(nmapRun.getHosts());
 			}//TODO see what happens when nmap4j has errors
@@ -193,6 +193,7 @@ public class NetworkViewPart implements ITreeContentProvider {
 			fd.setFilterNames(new String[] { "All Files (*.*)" });
 			fd.setFilterExtensions(new String[] { "*.*" });
 			nmapPath = fd.open();
+			if (nmapPath == null) return;
 			searchField.setText(nmapPath);
 		}
 
