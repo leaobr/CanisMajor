@@ -7,7 +7,7 @@
 <unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.8.1.v20130828-0031"/>
 <unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20130807-1835"/>
 <unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.8.0.v20130814-1242"/>
-<repository location="http://download.eclipse.org/releases/luna"/>
+<repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 </locations>
 </target>
