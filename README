@@ -1,5 +1,0 @@
-Canis Major - The centre of knowledge.
-//TODO - still at very early stages
-
-This uses a nmap wrapper for java. You must run with root privileges for the nmap scan to succeed.
-For now, it assumes nmap executable lives on /usr/bin or /usr/local/bin
