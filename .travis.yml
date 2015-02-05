@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - openjdk6
+
+script: mvn install
+
+branches:
+  only:
+  - master
