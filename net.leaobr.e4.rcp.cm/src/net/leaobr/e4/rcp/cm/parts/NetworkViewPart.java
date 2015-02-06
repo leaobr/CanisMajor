@@ -41,7 +41,7 @@ import org.osgi.framework.FrameworkUtil;
 public class NetworkViewPart implements ITreeContentProvider {
 	public static TreeViewer viewer;
 	private Image image;
-	public static Text searchField;
+	public static Text searchField, nmapPathField;
 	private Button searchBtn;
 	private String nmapPath;
 	public static Nmap4j nmap4j;
@@ -58,13 +58,18 @@ public class NetworkViewPart implements ITreeContentProvider {
 		outer.setLayout(formLayout);
 
 		Composite innerTop = new Composite(outer, SWT.NONE);
-		innerTop.setLayout(new GridLayout(2, false));
+		innerTop.setLayout(new GridLayout(3, false));
 		innerTop.setBackground(parent.getDisplay().getSystemColor(SWT.COLOR_WIDGET_BACKGROUND));
-		searchField = new Text(innerTop, SWT.SINGLE | SWT.BORDER | SWT.CANCEL);
+		searchField = new Text(innerTop, SWT.SINGLE | SWT.BORDER);
+		searchField.setToolTipText("nmap path, note this should be the parent path of where nmap lives instead of pointing to the executable directly!");
 		searchField.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
 		searchBtn = new Button(innerTop, SWT.NONE);
 		searchBtn.setText("...");
 		searchBtn.addSelectionListener(new NmapPathInitializer(parent));
+		nmapPathField = new Text(innerTop, SWT.SINGLE | SWT.BORDER);
+		nmapPathField.setToolTipText("nmap args [Hardcoded for now]");
+		nmapPathField.setEditable(false);
+		nmapPathField.setText("-sn -PR -oX 192.168.1.0/24");
 		FormData fData = new FormData();
 		fData = new FormData();
 		fData.top = new FormAttachment(0);
