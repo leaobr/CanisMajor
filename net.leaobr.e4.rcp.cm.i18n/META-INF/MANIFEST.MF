@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: I18n
-Bundle-SymbolicName: net.leaobr.e4.rcp.cm.i18n
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: EXAMPLE
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Require-Bundle: org.eclipse.core.runtime
-Export-Package: net.leaobr.e4.rcp.cm.i18n

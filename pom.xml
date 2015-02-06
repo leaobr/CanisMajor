@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>net.leaobr.e4.rcp</groupId>
+	<groupId>net.leaobr.rcp</groupId>
 	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -21,28 +21,26 @@
 
 	<modules>
 		<!-- target -->
-		<module>net.leaobr.e4.rcp.cm.target</module>
+		<module>net.leaobr.rcp.cm.target</module>
 
 		<!-- bundles -->
-		<module>net.leaobr.e4.bundleresourceloader</module>
-		<module>net.leaobr.e4.rcp.cm</module>
-		<module>net.leaobr.e4.rcp.cm.model</module>
-		<module>net.leaobr.e4.rcp.cm.addons</module>
-		<module>net.leaobr.e4.rcp.cm.contribute</module>
-		<module>net.leaobr.e4.rcp.cm.events</module>
-		<module>net.leaobr.e4.rcp.cm.i18n</module>
-		<module>net.leaobr.e4.rcp.cm.service</module>
-		<module>net.leaobr.e4.renderer.swt</module>
+		<module>net.leaobr.cm.bundleresourceloader</module>
+		<module>net.leaobr.rcp.cm.application</module>
+		<module>net.leaobr.rcp.cm.model</module>
+		<module>net.leaobr.rcp.cm.addons</module>
+		<module>net.leaobr.rcp.cm.contribute</module>
+		<module>net.leaobr.rcp.cm.events</module>
+		<module>net.leaobr.rcp.cm.i18n</module>
+		<module>net.leaobr.rcp.cm.service</module>
+		<module>net.leaobr.renderer.swt</module>
 
 		<!-- features -->
-		<module>net.leaobr.e4.rcp.cm.feature</module>
+		<module>net.leaobr.rcp.cm.feature</module>
 
 		<!-- p2 repository for updates -->
 
 		<!-- product related -->
-		<module>net.leaobr.e4.rcp.cm.product</module>
-		<module>net.leaobr.extensionpoint.contribution</module>
-		<module>net.leaobr.extensionpoint.definition</module>
+		<module>net.leaobr.rcp.cm.product</module>
 
 		<!-- third party -->
 		<module>thirdparty/nmap4j</module>
@@ -126,10 +124,10 @@
 					<!-- use existing target platform definition -->
 					<target>
 						<artifact>
-							<groupId>net.leaobr.e4.rcp</groupId>
-							<artifactId>net.leaobr.e4.rcp.cm.target</artifactId>
+							<groupId>net.leaobr.rcp</groupId>
+							<artifactId>net.leaobr.rcp.cm.target</artifactId>
 							<version>1.0.0-SNAPSHOT</version>
-							<classifier>eclipse4rcp</classifier>
+							<classifier>CanisMajorRCP</classifier>
 						</artifact>
 					</target>
 

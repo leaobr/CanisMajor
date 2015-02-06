@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kRdLcL-ZEeGFAvs8os6Opw" elementId="net.leaobr.e4.rcp.cm.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_3wev8L-ZEeGFAvs8os6Opw" elementId="net.leaobr.rcp.cm.application.trimmedwindow" label="Canis-Major" x="100" y="100" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_JajEUL-iEeGIRPhGyuFE7Q" elementId="net.leaobr.rcp.cm.application.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_3v3DYKmDEeSOudIsA5fESg" elementId="net.leaobr.rcp.cm.application.perspective.network" label="Network">
+        <children xsi:type="basic:PartStack" xmi:id="_dydMkKmLEeSOudIsA5fESg" elementId="net.leaobr.rcp.cm.application.partstack.3" accessibilityPhrase="">
+          <children xsi:type="basic:Part" xmi:id="_Xv_T0KmLEeSOudIsA5fESg" elementId="net.leaobr.rcp.cm.application.part.networkMonitor" contributionURI="bundleclass://net.leaobr.rcp.cm.application/net.leaobr.rcp.cm.parts.NetworkViewPart" label="Network Monitor"/>
+        </children>
+      </children>
+    </children>
+    <variables>shellMaximized</variables>
+    <mainMenu xmi:id="_TbH8MMZXEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_ZgLCUMZsEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_cAdi4MZuEeGbkqRLZ7osPQ" elementId="net.leaobr.rcp.cm.application.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_dkEDoMZuEeGbkqRLZ7osPQ" elementId="net.leaobr.rcp.cm.application.menuitem.Exit" label="Exit" command="_F8KnQMZYEeGbkqRLZ7osPQ"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_5T5nwMZuEeGbkqRLZ7osPQ" elementId="net.leaobr.rcp.cm.application.trimbar.first">
+      <children xsi:type="menu:ToolBar" xmi:id="_7hjLEMZuEeGbkqRLZ7osPQ" elementId="net.leaobr.rcp.cm.application.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_U6VRsKxyEeSZsaT4n1mzXg" elementId="net.leaobr.e4.rcp.cm.handledtoolitem.run" label="Run" iconURI="platform:/plugin/net.leaobr.rcp.cm.application/images/run-button.png" command="_3wCsUKxyEeSZsaT4n1mzXg"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_rB5CEMZrEeGbkqRLZ7osPQ" elementId="net.leaobr.rcp.cm.handlers.exit" contributionURI="bundleclass://net.leaobr.rcp.cm.application/net.leaobr.rcp.cm.handlers.ExitHandler" command="_F8KnQMZYEeGbkqRLZ7osPQ"/>
+  <handlers xmi:id="_oEWGUKywEeSQ9vrYgklZlw" elementId="net.leaobr.rcp.cm.handler.run" contributionURI="bundleclass://net.leaobr.rcp.cm.application/net.leaobr.rcp.cm.handlers.RunHandler" command="_3wCsUKxyEeSZsaT4n1mzXg"/>
+  <rootContext xmi:id="_2jk_wMZvEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="Windows and Dialogs" description="Windows and Dialogs"/>
+  <commands xmi:id="_F8KnQMZYEeGbkqRLZ7osPQ" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_3wCsUKxyEeSZsaT4n1mzXg" elementId="net.leaobr.rcp.cm.command.run" commandName="Run"/>
+  <addons xmi:id="_kRdLcb-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_kRdLcr-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_kRdLc7-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_kRdLdL-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_kRdLdb-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_kRdLdr-ZEeGFAvs8os6Opw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_c3RRkKDUEeKOb431BOI1yA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

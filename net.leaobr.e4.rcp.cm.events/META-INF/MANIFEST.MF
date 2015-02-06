@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Events
-Bundle-SymbolicName: net.leaobr.e4.rcp.cm.events
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: EXAMPLE
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: net.leaobr.e4.rcp.cm.events

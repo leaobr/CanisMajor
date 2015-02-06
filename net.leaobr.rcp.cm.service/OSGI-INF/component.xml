@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ITodoService">
+   <implementation class="net.leaobr.rcp.cm.service.internal.MyTodoModelImpl"/>
+   <service>
+      <provide interface="net.leaobr.rcp.cm.model.ITodoService"/>
+   </service>
+</scr:component>
