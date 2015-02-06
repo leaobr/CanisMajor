@@ -2,7 +2,7 @@ language: java
 jdk:
   - openjdk6
 
-script: mvn install
+script: mvn clean && mvn install
 
 branches:
   only:

@@ -15,7 +15,7 @@
 
    <splash
       location="net.leaobr.e4.rcp.cm" />
-   <launcher name="todo">
+   <launcher name="CanisMajor">
       <solaris/>
       <win useIco="false">
          <bmp/>
@@ -26,11 +26,11 @@
    </vm>
 
    <plugins>
-      <plugin id="net.leaobr.e4.rcp.cm"/>
-      <plugin id="net.leaobr.e4.rcp.cm.model"/>
       <plugin id="com.ibm.icu"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
+      <plugin id="net.leaobr.e4.rcp.cm"/>
+      <plugin id="net.leaobr.e4.rcp.cm.model"/>
       <plugin id="org.apache.batik.css"/>
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.batik.util.gui"/>
