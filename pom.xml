@@ -24,13 +24,8 @@
 		<module>net.leaobr.cm.target</module>
 
 		<!-- bundles -->
-		<module>net.leaobr.cm.bundleresourceloader</module>
 		<module>net.leaobr.cm.application</module>
-		<module>net.leaobr.cm.addons</module>
 		<module>net.leaobr.cm.contribute</module>
-		<module>net.leaobr.cm.events</module>
-		<module>net.leaobr.cm.i18n</module>
-		<module>net.leaobr.renderer.swt</module>
 
 		<!-- features -->
 		<module>net.leaobr.cm.feature</module>
