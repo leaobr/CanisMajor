@@ -21,7 +21,7 @@
 
 	<modules>
 		<!-- target -->
-		<module>net.leaobr.rcp.cm.target</module>
+		<module>net.leaobr.cm.target</module>
 
 		<!-- bundles -->
 		<module>net.leaobr.cm.bundleresourceloader</module>
@@ -31,11 +31,12 @@
 		<module>net.leaobr.rcp.cm.contribute</module>
 		<module>net.leaobr.rcp.cm.events</module>
 		<module>net.leaobr.rcp.cm.i18n</module>
-		<module>net.leaobr.rcp.cm.service</module>
+		<module>net.leaobr.cm.service</module>
 		<module>net.leaobr.renderer.swt</module>
 
 		<!-- features -->
-		<module>net.leaobr.rcp.cm.feature</module>
+		<module>net.leaobr.cm.feature</module>
+		<module>net.leaobr.cm.e3feature</module>
 
 		<!-- p2 repository for updates -->
 

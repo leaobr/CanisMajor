@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>net.leaobr.rcp.cm.feature</artifactId>
+	<artifactId>net.leaobr.cm.service</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>eclipse-feature</packaging>
+	<packaging>eclipse-plugin</packaging>
 </project>
