@@ -1,55 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
+	<extension id="Application" point="org.eclipse.core.runtime.applications">
+		<application cardinality="singleton-global" thread="main"
+			visible="true">
+			<run class="net.leaobr.rcp.application.E3Application">
+			</run>
+		</application>
+	</extension>
 
-   <extension
-         id="product"
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="Canis Major">
-         <property
-               name="appName"
-               value="Canis Major">
-         </property>
-        
-          -->
-         <property
-               name="lifeCycleURI"
-               value="bundleclass://net.leaobr.cm.application/net.leaobr.rcp.cm.lifecycle.Manager">
-         </property>
-          <!-- comments out of testing purposes
-         <property
-               name="applicationCSS"
-               value="platform:/plugin/net.leaobr.cm.application/css/rainbow.css">
-         </property>
-         
-         <property
-               name="rendererFactoryUri"
-               value="bundleclass://net.leaobr.e4.renderer.swt/net.leaobr.renderer.swt.MyRendererFactory">
-         </property>
-         -->
-         <!-- commented to simplify SWTBot test example
-         <property
-               name="lifeCycleURI"
-               value="bundleclass://net.leaobr.e4.rcp.cm/net.leaobr.rcp.cm.lifecycle.LifeCycleManager">
-         </property>
-         -->
-      </product>
-   </extension>
-   <extension
-         point="org.eclipse.e4.ui.css.swt.theme">
-      <theme
-            basestylesheeturi="css/default.css"
-            id="net.leaobr.e4.rcp.cm.default"
-            label="Default Theme">
-      </theme>
-      <theme
-            basestylesheeturi="css/rainbow.css"
-            id="net.leaobr.e4.rcp.cm.rainbow"
-            label="Rainbow">
-      </theme>
-   </extension>
- 
+	<extension point="org.eclipse.ui.startup">
+		<startup class="net.leaobr.rcp.cm.parts.ConsoleView"/>
+	</extension>
 
+	<extension id="product" point="org.eclipse.core.runtime.products">
+		<product application="net.leaobr.rcp.cm.application.Application"
+			name="Canis Major">
+			<property name="appName" value="Canis Major">
+			</property>
+			<property name="applicationXMI" value="net.leaobr.rcp.cm.application/Application.e4xmi"> </property>
+   <property
+         name="startupForegroundColor"
+         value="000000">
+   </property>
+   <property
+         name="startupMessageRect"
+         value="10,10,280,17">
+   </property>
+   <property
+         name="startupProgressRect"
+         value="0,280,455,15">
+   </property>
+   <property
+         name="preferenceCustomization"
+         value="plugin_customization.ini">
+   </property>
+		</product>
+	</extension>
+	<extension point="org.eclipse.e4.ui.css.swt.theme">
+		<theme basestylesheeturi="css/default.css" id="net.leaobr.e4.rcp.cm.default"
+			label="Default Theme">
+		</theme>
+		<theme basestylesheeturi="css/rainbow.css" id="net.leaobr.e4.rcp.cm.rainbow"
+			label="Rainbow">
+		</theme>
+	</extension>
 </plugin>

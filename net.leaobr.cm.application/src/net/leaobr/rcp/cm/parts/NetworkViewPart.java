@@ -61,6 +61,7 @@ public class NetworkViewPart implements ITreeContentProvider {
 		innerTop.setLayout(new GridLayout(3, false));
 		innerTop.setBackground(parent.getDisplay().getSystemColor(SWT.COLOR_WIDGET_BACKGROUND));
 		searchField = new Text(innerTop, SWT.SINGLE | SWT.BORDER);
+		searchField.setText("/usr/local");
 		searchField.setToolTipText("nmap path, note this should be the parent path of where nmap lives instead of pointing to the executable directly!");
 		searchField.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
 		searchBtn = new Button(innerTop, SWT.NONE);
@@ -129,12 +130,14 @@ public class NetworkViewPart implements ITreeContentProvider {
 		viewer.getControl().setFocus();
 	}
 
+	@Override
 	@PreDestroy
 	public void dispose() {
 		image.dispose();
 	}
 
 	class ViewContentProvider implements ITreeContentProvider {
+		@Override
 		public void inputChanged(Viewer v, Object oldInput, Object newInput) {
 		}
 
@@ -178,6 +181,7 @@ public class NetworkViewPart implements ITreeContentProvider {
 			return hostName == null ? host.getAddresses().get(0).getAddr() : hostName.getName();
 		}
 
+		@Override
 		public Image getImage(Object element) {
 			return image;
 		}

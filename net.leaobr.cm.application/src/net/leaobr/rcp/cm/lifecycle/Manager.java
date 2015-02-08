@@ -1,36 +1,32 @@
 package net.leaobr.rcp.cm.lifecycle;
 
-import javax.inject.Inject;
+import java.io.PrintStream;
 
 import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.e4.core.di.extensions.Preference;
 import org.eclipse.e4.ui.workbench.lifecycle.PostContextCreate;
 import org.eclipse.equinox.app.IApplicationContext;
-import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Monitor;
-import org.eclipse.swt.widgets.Shell;
+import org.eclipse.ui.console.ConsolePlugin;
+import org.eclipse.ui.console.IConsole;
+import org.eclipse.ui.console.MessageConsole;
+import org.eclipse.ui.console.MessageConsoleStream;
 
+@SuppressWarnings("restriction")
 public class Manager {
-
-	// We add the nodePath in case you move the lifecycle handler to
-	// another plug-in later
-	@Inject
-	@Preference(nodePath = "net.leaobr.e4.rcp.cm", value = "user")
-	private String user;
 
 	@PostContextCreate
 	public void postContextCreate(@Preference IEclipsePreferences prefs,
 			IApplicationContext appContext, Display display) {
-
+		initializeConsole();
 	}
 
-	private void setLocation(Display display, Shell shell) {
-		Monitor monitor = display.getPrimaryMonitor();
-		Rectangle monitorRect = monitor.getBounds();
-		Rectangle shellRect = shell.getBounds();
-		int x = monitorRect.x + (monitorRect.width - shellRect.width) / 2;
-		int y = monitorRect.y + (monitorRect.height - shellRect.height) / 2;
-		shell.setLocation(x, y);
+	private void initializeConsole() {
+		final MessageConsole console = new MessageConsole("System Output", null);
+		console.setWaterMarks(500000, 1000000);
+		ConsolePlugin.getDefault().getConsoleManager().addConsoles(new IConsole[] { console });
+		MessageConsoleStream stream = console.newMessageStream();
+		System.setOut(new PrintStream(stream));
+		System.setErr(new PrintStream(stream));
 	}
 }
