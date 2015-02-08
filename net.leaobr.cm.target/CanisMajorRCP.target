@@ -2,15 +2,11 @@
 <?pde version="3.8"?><target includeMode="feature" name="CanisMajorRCP" sequenceNumber="39">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
- <unit id="org.eclipse.jdt.feature.group" version="3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1"/>
-<repository location="http://download.eclipse.org/releases/indigo/"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="org.eclipse.platform.sdk" version="4.3.2.M20140221-1700"/>
-<unit id="org.eclipse.rcp.sdk.id" version="4.3.2.M20140221-1700"/>
-<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.8.1.v20140221-1852"/>
-<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20140117-1004"/>
-<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.8.0.v20140114-1344"/>
+<unit id="org.eclipse.platform.sdk" version="4.3.1.M20130911-1000"/>
+<unit id="org.eclipse.rcp.sdk.id" version="4.3.1.M20130911-1000"/>
+<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.8.1.v20130828-0031"/>
+<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20130807-1835"/>
+<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.8.0.v20130814-1242"/>
 <repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 </locations>
