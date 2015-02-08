@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: CanisMajor
-Bundle-SymbolicName: net.leaobr.rcp.cm.application;singleton:=true
+Bundle-SymbolicName: net.leaobr.cm.application;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: leaobr.net
 Require-Bundle: org.eclipse.swt;bundle-version="3.100.0",

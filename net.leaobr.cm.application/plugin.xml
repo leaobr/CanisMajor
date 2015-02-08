@@ -16,12 +16,12 @@
           -->
          <property
                name="lifeCycleURI"
-               value="bundleclass://net.leaobr.rcp.cm.application/net.leaobr.rcp.cm.lifecycle.Manager">
+               value="bundleclass://net.leaobr.cm.application/net.leaobr.rcp.cm.lifecycle.Manager">
          </property>
           <!-- comments out of testing purposes
          <property
                name="applicationCSS"
-               value="platform:/plugin/net.leaobr.rcp.cm.application/css/rainbow.css">
+               value="platform:/plugin/net.leaobr.cm.application/css/rainbow.css">
          </property>
          
          <property

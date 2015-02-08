@@ -25,7 +25,7 @@
 
 		<!-- bundles -->
 		<module>net.leaobr.cm.bundleresourceloader</module>
-		<module>net.leaobr.rcp.cm.application</module>
+		<module>net.leaobr.cm.application</module>
 		<module>net.leaobr.cm.model</module>
 		<module>net.leaobr.cm.addons</module>
 		<module>net.leaobr.cm.contribute</module>
