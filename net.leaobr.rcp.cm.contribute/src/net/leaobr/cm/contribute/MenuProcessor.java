@@ -44,9 +44,9 @@ public class MenuProcessor {
 			// Now add a new menu entry
 			MDirectMenuItem menuItem = MMenuFactory.INSTANCE.
 					createDirectMenuItem();
-			menuItem.setLabel("Another Exit");
+			menuItem.setLabel("Exit");
 			menuItem.setContributionURI("bundleclass://"
-					+ "net.leaobr.e4.rcp.cm.contribute/"
+					+ "net.leaobr.rcp.cm.contribute/"
 					+ ExitHandlerWithCheck.class.getName());
 			menu.getChildren().add(menuItem);
 		}

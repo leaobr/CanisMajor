@@ -27,10 +27,10 @@
 		<module>net.leaobr.cm.bundleresourceloader</module>
 		<module>net.leaobr.rcp.cm.application</module>
 		<module>net.leaobr.rcp.cm.model</module>
-		<module>net.leaobr.rcp.cm.addons</module>
+		<module>net.leaobr.cm.addons</module>
 		<module>net.leaobr.rcp.cm.contribute</module>
-		<module>net.leaobr.rcp.cm.events</module>
-		<module>net.leaobr.rcp.cm.i18n</module>
+		<module>net.leaobr.cm.events</module>
+		<module>net.leaobr.cm.i18n</module>
 		<module>net.leaobr.cm.service</module>
 		<module>net.leaobr.renderer.swt</module>
 
