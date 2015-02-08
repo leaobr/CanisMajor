@@ -41,7 +41,7 @@
 		<!-- p2 repository for updates -->
 
 		<!-- product related -->
-		<module>net.leaobr.rcp.cm.product</module>
+		<module>net.leaobr.cm.product</module>
 
 		<!-- third party -->
 		<module>thirdparty/nmap4j</module>
