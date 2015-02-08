@@ -30,7 +30,6 @@
 		<module>net.leaobr.cm.contribute</module>
 		<module>net.leaobr.cm.events</module>
 		<module>net.leaobr.cm.i18n</module>
-		<module>net.leaobr.cm.service</module>
 		<module>net.leaobr.renderer.swt</module>
 
 		<!-- features -->
