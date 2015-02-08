@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Contribute
-Bundle-SymbolicName: net.leaobr.rcp.cm.contribute;singleton:=true
+Bundle-SymbolicName: net.leaobr.cm.contribute;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: leaobr.net
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
