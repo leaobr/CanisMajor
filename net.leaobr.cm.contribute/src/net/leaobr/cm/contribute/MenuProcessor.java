@@ -46,7 +46,7 @@ public class MenuProcessor {
 					createDirectMenuItem();
 			menuItem.setLabel("Exit");
 			menuItem.setContributionURI("bundleclass://"
-					+ "net.leaobr.rcp.cm.contribute/"
+					+ "net.leaobr.cm.contribute/"
 					+ ExitHandlerWithCheck.class.getName());
 			menu.getChildren().add(menuItem);
 		}

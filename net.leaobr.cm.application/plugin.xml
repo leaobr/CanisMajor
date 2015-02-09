@@ -14,11 +14,11 @@
 	</extension>
 
 	<extension id="product" point="org.eclipse.core.runtime.products">
-		<product application="net.leaobr.rcp.cm.application.Application"
+		<product application="net.leaobr.cm.application.Application"
 			name="Canis Major">
 			<property name="appName" value="Canis Major">
 			</property>
-			<property name="applicationXMI" value="net.leaobr.rcp.cm.application/Application.e4xmi"> </property>
+			<property name="applicationXMI" value="net.leaobr.cm.application/Application.e4xmi"> </property>
    <property
          name="startupForegroundColor"
          value="000000">
@@ -38,10 +38,10 @@
 		</product>
 	</extension>
 	<extension point="org.eclipse.e4.ui.css.swt.theme">
-		<theme basestylesheeturi="css/default.css" id="net.leaobr.e4.rcp.cm.default"
+		<theme basestylesheeturi="css/default.css" id="net.leaobr.e4.cm.default"
 			label="Default Theme">
 		</theme>
-		<theme basestylesheeturi="css/rainbow.css" id="net.leaobr.e4.rcp.cm.rainbow"
+		<theme basestylesheeturi="css/rainbow.css" id="net.leaobr.e4.cm.rainbow"
 			label="Rainbow">
 		</theme>
 	</extension>
