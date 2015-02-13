@@ -74,14 +74,14 @@ public class hostdiscover
 		InetAddress pingAddr;
 		System.out.println("Attempting to resolve gateway...");
 		try {
-			pingAddr = InetAddress.getByName("www.google.com");
+			pingAddr = InetAddress.getByName("www.yahoo.com");
 			this.ARPListener.setFilter("tcp and dst host "+pingAddr.getHostAddress(),true);
 			this.ARPListener.getListener().setPacketReadTimeout(5000);
 			this.ARPListener.start();
 
 			while(true){
 				try {
-					new URL("http://www.google.com").openStream().close();
+					new URL("http://www.yahoo.com").openStream().close();
 				}catch (Exception e){
 					e.printStackTrace();
 				}
