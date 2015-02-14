@@ -20,24 +20,8 @@
 	</scm>
 
 	<modules>
-		<!-- target -->
-		<module>net.leaobr.cm.target</module>
-
-		<!-- bundles -->
-		<module>net.leaobr.cm.application</module>
-
-		<!-- features -->
-		<module>net.leaobr.cm.feature</module>
-		<module>net.leaobr.cm.e3feature</module>
-
-		<!-- p2 repository for updates -->
-
-		<!-- product related -->
-		<module>net.leaobr.cm.product</module>
-
-		<!-- third party -->
-		<module>thirdparty/nmap4j</module>
-
+		<module>canisMajor</module>
+		<module>plugins</module>
 	</modules>
 
 	<!-- tycho requires maven >= 3.0 -->

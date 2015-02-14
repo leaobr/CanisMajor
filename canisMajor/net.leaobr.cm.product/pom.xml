@@ -4,39 +4,38 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>parent</artifactId>
+		<artifactId>canisMajor</artifactId>
 		<groupId>net.leaobr.cm</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>net.leaobr.cm.target</artifactId>
+	<artifactId>net.leaobr.cm.product</artifactId>
 	<!-- Release version goes here. -->
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>eclipse-repository</packaging>
 	<build>
 		<plugins>
-			<!-- attach the .target file definition to is artifact so it can be referred 
-				to below in the target-platform-configuration -->
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.3</version>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
 				<executions>
 					<execution>
-						<id>attach-artifacts</id>
+						<!-- install the product for all configured os/ws/arch environments 
+							using p2 director -->
+						<id>materialize-products</id>
 						<phase>package</phase>
 						<goals>
-							<goal>attach-artifact</goal>
+							<goal>materialize-products</goal>
 						</goals>
-						<configuration>
-							<artifacts>
-								<artifact>
-									<file>CanisMajorRCP.target</file>
-									<type>target</type>
-									<classifier>CanisMajorRCP</classifier>
-								</artifact>
-							</artifacts>
-						</configuration>
+					</execution>
+					<!-- (optional) create product zips (one per os/ws/arch) -->
+					<execution>
+						<id>archive-products</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
