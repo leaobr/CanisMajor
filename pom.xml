@@ -21,7 +21,7 @@
 
 	<modules>
 		<module>canisMajor</module>
-		<module>plugins</module>
+		<module>plugins/thirdParty</module>
 	</modules>
 
 	<!-- tycho requires maven >= 3.0 -->

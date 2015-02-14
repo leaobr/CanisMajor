@@ -7,13 +7,12 @@
 		<artifactId>parent</artifactId>
 		<groupId>net.leaobr.cm</groupId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
 	<artifactId>thirdParty</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>thirdParty/nmap4j</module>
+		<module>nmap4j</module>
 	</modules>	
 </project>
 
