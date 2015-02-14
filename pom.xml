@@ -25,7 +25,6 @@
 
 		<!-- bundles -->
 		<module>net.leaobr.cm.application</module>
-		<module>net.leaobr.cm.contribute</module>
 
 		<!-- features -->
 		<module>net.leaobr.cm.feature</module>
