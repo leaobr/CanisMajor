@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="net.leaobr.cm.feature"
+      id="net.leaobr.cm.plugins.feature"
       label="Feature"
-      version="1.0.0.qualifier"
-      provider-name="net.leaobr">
+      version="1.0.0.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -18,7 +17,7 @@
    </license>
 
    <plugin
-         id="net.leaobr.cm.application"
+         id="net.leaobr.cm.nmap.ui"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -26,13 +25,6 @@
 
    <plugin
          id="org.nmap4j"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="net.leaobr.cm.execution"
          download-size="0"
          install-size="0"
          version="0.0.0"

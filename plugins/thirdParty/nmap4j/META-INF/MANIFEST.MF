@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Nmap4j
-Bundle-SymbolicName: org.nmap4j;singleton:=true
+Bundle-SymbolicName: org.nmap4j
 Bundle-Version: 1.0.4
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy

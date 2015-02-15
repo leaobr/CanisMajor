@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>net.leaobr.cm</groupId>
-		<artifactId>canisMajor</artifactId>
+		<groupId>net.leaobr.cm.plugins</groupId>
+		<artifactId>plugins</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>net.leaobr.cm.application</artifactId>
-	<name>CM Application model</name>
-	<description>The Application model</description>
-	<packaging>eclipse-plugin</packaging>
+	<artifactId>net.leaobr.cm.plugins.feature</artifactId>
+	<name>CM Plugins Feature</name>
+	<description>Feature that contains CanisMajor application plugins</description>
+	<packaging>eclipse-feature</packaging>
 </project>

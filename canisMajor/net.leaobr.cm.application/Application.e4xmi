@@ -13,7 +13,7 @@
           </children>
           <children xsi:type="basic:PartSashContainer" xmi:id="_bTQ1YNS2EeGBn6dQ9VPexA" elementId="" containerData="10000">
             <children xsi:type="basic:Part" xmi:id="_e59B0K-6EeSE65YvKU3_OQ" elementId="net.leaobr.rcp.cm.application.part.networkMonitor" contributionURI="bundleclass://net.leaobr.cm.application/net.leaobr.rcp.cm.parts.NetworkViewPart" label="Network Monitor"/>
-            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editorss" visible="false" ref="_Hmg4kNSjEeGwXp2p959l3w"/>
+            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editors" ref="_Hmg4kNSjEeGwXp2p959l3w"/>
             <children xsi:type="basic:PartStack" xmi:id="_qAHrYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.views.PropertySheetMStack" containerData="3400" selectedElement="_lSnvsK-cEeSSVOKKRYG1Cw">
               <tags>newtablook</tags>
               <tags>org.eclipse.e4.secondaryDataStack</tags>
@@ -30,7 +30,7 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_pOPNsK-9EeSE65YvKU3_OQ" elementId="net.leaobr.cm.application.menuitem.Exit" label="Exit" command="_i5erEK-9EeSE65YvKU3_OQ"/>
       </children>
     </mainMenu>
-    <sharedElements xsi:type="advanced:Area" xmi:id="_Hmg4kNSjEeGwXp2p959l3w" elementId="org.eclipse.ui.editorss">
+    <sharedElements xsi:type="advanced:Area" xmi:id="_Hmg4kNSjEeGwXp2p959l3w" elementId="org.eclipse.ui.editors">
       <children xsi:type="basic:PartStack" xmi:id="_HmhfoNSjEeGwXp2p959l3w" elementId="org.eclipse.e4.primaryDataStack">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
