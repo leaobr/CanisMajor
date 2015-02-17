@@ -20,8 +20,8 @@ public class EvaluateContributionsHandler {
 			"net.leaobr.cm.execution.environment";
 
 	@Execute
-	public void execute(IExtensionRegistry registry, ExecutionContext context, Map<String, Object> arguments) {
-		evaluate(registry, context, arguments);
+	public void execute(IExtensionRegistry registry) {
+		evaluate(registry, null, null);
 	}
 
 	private void evaluate(IExtensionRegistry registry, ExecutionContext context, Map<String, Object> arguments) {
