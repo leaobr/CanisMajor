@@ -15,7 +15,6 @@
 	<name>CM Plugins parent pom</name>
 	<description>Parent pom for Plugins</description>
 	<modules>
-		<module>net.leaobr.cm.plugins.feature</module>
 		<module>net.leaobr.cm.nmap.ui</module>
 		<module>thirdParty</module>
 	</modules>

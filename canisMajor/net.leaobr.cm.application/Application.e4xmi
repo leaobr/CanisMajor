@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_VnmacNSzEeGBn6dQ9VPexA" elementId="test.rcp.application" bindingContexts="_VnmacdSzEeGBn6dQ9VPexA">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_VnmacNSzEeGBn6dQ9VPexA" elementId="net.leaobr.cm.rcp.application" bindingContexts="_VnmacdSzEeGBn6dQ9VPexA">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_Vnmah9SzEeGBn6dQ9VPexA" elementId="net.leaobr.cm.application.trimmedwindow" label="Canis-Major" iconURI="" width="800" height="600">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_Vnmaj9SzEeGBn6dQ9VPexA" elementId="net.leaobr.rcp.cm.application.perspectivestack.0" selectedElement="_VnmakNSzEeGBn6dQ9VPexA">
-      <children xsi:type="advanced:Perspective" xmi:id="_VnmakNSzEeGBn6dQ9VPexA" elementId="net.leaobr.cm.application.perspective.network" selectedElement="_VnnBgNSzEeGBn6dQ9VPexA" label="Network" iconURI="">
+      <children xsi:type="advanced:Perspective" xmi:id="_VnmakNSzEeGBn6dQ9VPexA" elementId="net.leaobr.cm.application.perspective.default" selectedElement="_VnnBgNSzEeGBn6dQ9VPexA" label="Default" iconURI="">
         <tags>Perspective</tags>
         <tags>categoryTag:General</tags>
         <children xsi:type="basic:PartSashContainer" xmi:id="_VnnBgNSzEeGBn6dQ9VPexA" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_VnnBgdSzEeGBn6dQ9VPexA" visible="false" containerData="3400">
+          <children xsi:type="basic:PartStack" xmi:id="_VnnBgdSzEeGBn6dQ9VPexA" toBeRendered="false" visible="false" containerData="3400">
             <tags>newtablook</tags>
             <tags>org.eclipse.e4.primaryNavigationStack</tags>
             <children xsi:type="advanced:Placeholder" xmi:id="_QR29cNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_sS7Q8NS1EeGBn6dQ9VPexA"/>
           </children>
           <children xsi:type="basic:PartSashContainer" xmi:id="_bTQ1YNS2EeGBn6dQ9VPexA" elementId="" containerData="10000">
-            <children xsi:type="basic:Part" xmi:id="_e59B0K-6EeSE65YvKU3_OQ" elementId="net.leaobr.rcp.cm.application.part.networkMonitor" contributionURI="bundleclass://net.leaobr.cm.application/net.leaobr.rcp.cm.parts.NetworkViewPart" label="Network Monitor"/>
-            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editors" ref="_Hmg4kNSjEeGwXp2p959l3w"/>
+            <children xsi:type="basic:PartStack" xmi:id="_f30fQLbAEeS5-sPZZ582tg" elementId="net.leaobr.cm.application.partstack.customui"/>
+            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editors" toBeRendered="false" visible="false" ref="_Hmg4kNSjEeGwXp2p959l3w"/>
             <children xsi:type="basic:PartStack" xmi:id="_qAHrYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.views.PropertySheetMStack" containerData="3400" selectedElement="_lSnvsK-cEeSSVOKKRYG1Cw">
               <tags>newtablook</tags>
               <tags>org.eclipse.e4.secondaryDataStack</tags>
@@ -79,7 +79,7 @@
       <children xsi:type="menu:ToolControl" xmi:id="_VQRMoNTAEeGTY-uOtVc6Mg" elementId="org.eclipse.ui.ProgressBar" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim"/>
     </trimBars>
   </children>
-  <handlers xmi:id="_3y21EK-6EeSE65YvKU3_OQ" elementId="net.leaobr.cm.handler.run" contributionURI="bundleclass://net.leaobr.cm.application/net.leaobr.rcp.cm.handlers.RunHandler" command="_10HQcK-6EeSE65YvKU3_OQ"/>
+  <handlers xmi:id="_3y21EK-6EeSE65YvKU3_OQ" elementId="net.leaobr.cm.handler.run" contributionURI="bundleclass://net.leaobr.cm.execution/net.leaobr.cm.execution.EvaluateContributionsHandler" command="_10HQcK-6EeSE65YvKU3_OQ"/>
   <handlers xmi:id="_g4LhsK-9EeSE65YvKU3_OQ" elementId="net.leaobr.cm.handlers.exit" contributionURI="bundleclass://net.leaobr.cm.application/net.leaobr.rcp.cm.handlers.ExitHandler" command="_i5erEK-9EeSE65YvKU3_OQ"/>
   <bindingTables xmi:id="_VnmafNSzEeGBn6dQ9VPexA" bindingContext="_VnmacdSzEeGBn6dQ9VPexA"/>
   <rootContext xmi:id="_VnmacdSzEeGBn6dQ9VPexA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">

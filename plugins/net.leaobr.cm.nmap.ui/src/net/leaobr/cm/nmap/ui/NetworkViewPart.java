@@ -1,4 +1,4 @@
-package net.leaobr.rcp.cm.parts;
+package net.leaobr.cm.nmap.ui;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -30,8 +30,6 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Text;
-import org.nmap4j.Nmap4j;
-import org.nmap4j.data.NMapRun;
 import org.nmap4j.data.host.Hostnames;
 import org.nmap4j.data.nmaprun.Host;
 import org.nmap4j.data.nmaprun.hostnames.Hostname;
@@ -43,9 +41,6 @@ public class NetworkViewPart implements ITreeContentProvider {
 	private Image image;
 	public static Text searchField, nmapPathField;
 	private Button searchBtn;
-	private String nmapPath;
-	public static Nmap4j nmap4j;
-	public static NMapRun nmapRun;
 
 	@PostConstruct
 	public void createControls(Composite parent) {
@@ -112,7 +107,7 @@ public class NetworkViewPart implements ITreeContentProvider {
 
 	@Override
 	public Object[] getChildren(Object parentElement) {
-		return nmapRun.getHosts().toArray();
+		return NmapExecutor.nmapRun.getHosts().toArray();
 	}
 
 	@Override
@@ -148,9 +143,9 @@ public class NetworkViewPart implements ITreeContentProvider {
 		@Override
 		public Object[] getElements(Object inputElement) {
 			List<Object> children = new ArrayList<Object>();
-			if (nmap4j != null) {
-				nmapRun = nmap4j.getResult();
-				children.addAll(nmapRun.getHosts());
+			if (NmapExecutor.nmap4j != null) {
+				NmapExecutor.nmapRun = NmapExecutor.nmap4j.getResult();
+				children.addAll(NmapExecutor.nmapRun.getHosts());
 			}//TODO see what happens when nmap4j has errors
 			return children.toArray();
 		}
@@ -201,9 +196,9 @@ public class NetworkViewPart implements ITreeContentProvider {
 			fd.setText("Select File Path");
 			fd.setFilterNames(new String[] { "All Files (*.*)" });
 			fd.setFilterExtensions(new String[] { "*.*" });
-			nmapPath = fd.open();
-			if (nmapPath == null) return;
-			searchField.setText(nmapPath);
+			NmapExecutor.nmapPath = fd.open();
+			if (NmapExecutor.nmapPath == null) return;
+			searchField.setText(NmapExecutor.nmapPath);
 		}
 
 		@Override
