@@ -21,8 +21,8 @@
 	</scm>
 
 	<modules>
-		<module>canisMajor</module>
 		<module>plugins</module>
+		<module>canisMajor</module>
 	</modules>
 
 	<!-- tycho requires maven >= 3.0 -->

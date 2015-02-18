@@ -9,7 +9,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>net.leaobr.cm.e3feature</artifactId>
-	<name>CM Eclipse 3.x Feature</name>
+	<name>CM Eclipse 3.x FEATURE</name>
 	<description>CanisMajor support for Eclipse 3.x required plugins (eclipse.ui, console, navigator, properties) feature.</description>
 	<packaging>eclipse-feature</packaging>
 </project>

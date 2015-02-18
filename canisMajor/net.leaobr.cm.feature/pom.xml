@@ -9,7 +9,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>net.leaobr.cm.feature</artifactId>
-	<name>CM Main Feature</name>
+	<name>CM Main FEATURE</name>
 	<description>CanisMajor Core Application Feature</description>
 	<packaging>eclipse-feature</packaging>
 </project>

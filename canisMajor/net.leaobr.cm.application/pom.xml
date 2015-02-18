@@ -8,7 +8,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>net.leaobr.cm.application</artifactId>
-	<name>CM Application model</name>
+	<name>CM Application Model</name>
 	<description>The Application model</description>
 	<packaging>eclipse-plugin</packaging>
 </project>

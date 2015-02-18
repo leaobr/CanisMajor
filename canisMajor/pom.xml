@@ -24,7 +24,6 @@
 		<!-- features -->
 		<module>net.leaobr.cm.feature</module>
 		<module>net.leaobr.cm.e3feature</module>
-		<module>../plugins/net.leaobr.cm.plugins.feature</module>
 
 		<!-- p2 repository for updates -->
 
