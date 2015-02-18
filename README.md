@@ -1,7 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/leaobr/CanisMajor.png)](http://travis-ci.org/leaobr/CanisMajor)
 
-#####Note: The last logically stable revision was @cd502de. _Please use it to test the application until further notice._ 
-
 # [Canis Major](https://en.wikipedia.org/wiki/Canis_Major) - An Execution Manager for wicked command line tools.
 
 To start with, this will concentrate on giving an interactive view to the famous wicked nmap
