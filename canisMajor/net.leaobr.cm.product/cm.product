@@ -3,6 +3,7 @@
 
 <product name="Canis Major" uid="net.leaobr.cm.product" id="net.leaobr.cm.application.product" application="net.leaobr.cm.application.Application" version="0.0.1" useFeatures="true" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -27,8 +28,10 @@
       </win>
    </launcher>
 
+
    <vm>
    </vm>
+
 
    <plugins>
       <plugin id="com.ibm.icu"/>
@@ -91,7 +94,6 @@
       <feature id="org.eclipse.e4.rcp"/>
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.emf.common"/>
-      <feature id="org.eclipse.equinox.p2.core.feature"/>
       <feature id="net.leaobr.cm.e3feature" version="1.0.0.qualifier"/>
       <feature id="net.leaobr.cm.plugins.feature" version="1.0.0.qualifier"/>
    </features>
