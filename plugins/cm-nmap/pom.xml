@@ -14,7 +14,7 @@
 	<name>CM Nmap Modules parent POM</name>
 	<description>Nmap Modules Parent POM</description>
 	<modules>
-		<module>net.leaobr.cm-nmap.feature</module>
+		<module>net.leaobr.cm.nmap.feature</module>
 		<module>net.leaobr.cm.nmap.ui</module>
 		<module>nmap4j</module>
 	</modules>
