@@ -38,5 +38,6 @@ public class ConsoleView implements IStartup {
 		MessageConsoleStream stream = console.newMessageStream();
 		System.setOut(new PrintStream(stream));
 		System.setErr(new PrintStream(stream));
+		stream.setActivateOnWrite(true);
 	}
 }
