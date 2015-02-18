@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Nmap4j
 Bundle-SymbolicName: org.nmap4j
 Bundle-Version: 1.0.4
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.nmap4j,
  org.nmap4j.core.flags,
