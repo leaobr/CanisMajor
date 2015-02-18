@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>thirdParty</artifactId>
-		<groupId>net.leaobr.cm.plugins.thirdparty</groupId>
+		<artifactId>cm-nmap</artifactId>
+		<groupId>net.leaobr.cm.plugins.cm-nmap</groupId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
@@ -11,7 +11,7 @@
 	<artifactId>org.nmap4j</artifactId>
 	<version>1.0.4</version>
 	<name>Nmap Java Parser Plugin</name>
-	<description>Cross Platform Nmap Java parser and process manager</description>
+	<description>Cross Platform Nmap parser and process manager</description>
 	<packaging>eclipse-plugin</packaging>
 	<dependencies>
 		<dependency>
