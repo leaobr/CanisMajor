@@ -1,6 +1,6 @@
 [![Build Status](https://secure.travis-ci.org/leaobr/CanisMajor.png)](http://travis-ci.org/leaobr/CanisMajor)
 
-# [Canis Major](https://en.wikipedia.org/wiki/Canis_Major) - An Execution Manager for wicked command line tools.
+# [Canis Major](https://en.wikipedia.org/wiki/Canis_Major) - An Execution and Automation Manager for well known tools and dayly routine jobs.
 
 To start with, this will concentrate on giving an interactive view to the famous wicked nmap
 and then more fun activities that can be performed with it such as exploring
@@ -18,4 +18,4 @@ Please see the current open [issues](https://github.com/leaobr/CanisMajor/issues
 
 _NOTE: THIS PROJECT IS AT VERY EARLY STAGES OF DEVELOPMENT! It doesn't do or show anything very exciting at the moment but a simple nmap scan nodes tree in a RCP GUI._
 
-#####Enjoy it, use it, abuse it and share your thoughts! Pull requests are very welcomed.
+#####Enjoy it, use it, abuse it and share your thoughts!
