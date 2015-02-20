@@ -1,6 +1,6 @@
 [![Build Status](https://secure.travis-ci.org/leaobr/CanisMajor.png)](http://travis-ci.org/leaobr/CanisMajor)
 
-# [Canis Major](https://en.wikipedia.org/wiki/Canis_Major) - An Execution and Automation Manager for well known tools and dayly routine jobs.
+# [Canis Major](https://en.wikipedia.org/wiki/Canis_Major) - An Execution and Automation Manager for well known tools and daily routine jobs.
 
 To start with, this will concentrate on giving an interactive view to the famous wicked nmap
 and then more fun activities that can be performed with it such as exploring
