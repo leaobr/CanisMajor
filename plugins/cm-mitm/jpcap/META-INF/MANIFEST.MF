@@ -7,3 +7,4 @@ Bundle-ActivationPolicy: lazy
 Export-Package: jpcap,
  jpcap.api,
  jpcap.packet
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

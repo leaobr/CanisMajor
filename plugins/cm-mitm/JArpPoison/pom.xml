@@ -3,29 +3,19 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.leaobr</groupId>
-	<artifactId>jarppoison</artifactId>
-	<version>1.0</version>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-	<dependencies>
-		<dependency>
-			<groupId>org.robotninjas</groupId>
-			<artifactId>jpcap</artifactId>
-			<version>1.0</version>
-		</dependency>
-	</dependencies>
+	<name>THIRDPARTY MITM LIBRARY</name>
+	<url>http://github.com/leaobr/JArpPoison.git</url>
+	<description>Uses Jpcap along with libjpcap or (winpcap) to perform mitm actions in a network</description>
+	<artifactId>JArpPoison</artifactId>
+	<packaging>eclipse-plugin</packaging>
 	<scm>
 		<url>scm:git:git://github.com/leaobr/JArpPoison.git</url>
 		<developerConnection>scm:git:ssh://git@github.com/leaobr/JArpPoison.git</developerConnection>
 	</scm>
+	<parent>
+		<groupId>net.leaobr.cm.plugins.cm-mitm</groupId>
+		<artifactId>cm-mitm</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 </project>

@@ -58,3 +58,6 @@ dSploit/build/
 # PDT-specific
 .buildpath
 /obj
+
+#logs
+*.log

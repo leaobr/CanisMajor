@@ -16,5 +16,7 @@
 	<modules>
 		<module>net.leaobr.cm.mitm.feature</module>
 		<module>net.leaobr.cm.mitm.ui</module>
+		<module>JArpPoison</module>
+		<module>jpcap</module>
 	</modules>
 </project>

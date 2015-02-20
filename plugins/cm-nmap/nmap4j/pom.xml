@@ -10,7 +10,7 @@
 	<groupId>org.nmap4j</groupId>
 	<artifactId>org.nmap4j</artifactId>
 	<version>1.0.4</version>
-	<name>Nmap Java Parser Plugin</name>
+	<name>THIRDPARTY Nmap Java Parser Plugin</name>
 	<description>Cross Platform Nmap parser and process manager</description>
 	<packaging>eclipse-plugin</packaging>
 	<dependencies>
