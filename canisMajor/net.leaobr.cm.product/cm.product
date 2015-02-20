@@ -3,13 +3,14 @@
 
 <product name="Canis Major" uid="net.leaobr.cm.product" id="net.leaobr.cm.application.product" application="net.leaobr.cm.application.Application" version="0.0.1" useFeatures="true" includeLaunchers="true">
 
-
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
       <programArgs>-clearPersistedState
       </programArgs>
+      <vmArgs>-Djava.library.path=${workspace_loc:plugins/cm-mitm/jpcap/lib/64bits}
+      </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
@@ -28,10 +29,8 @@
       </win>
    </launcher>
 
-
    <vm>
    </vm>
-
 
    <plugins>
       <plugin id="com.ibm.icu"/>
@@ -96,6 +95,7 @@
       <feature id="org.eclipse.emf.common"/>
       <feature id="net.leaobr.cm.e3feature" version="1.0.0.qualifier"/>
       <feature id="net.leaobr.cm.nmap.feature" version="1.0.0.qualifier"/>
+      <feature id="net.leaobr.cm.mitm.feature" version="1.0.0.qualifier"/>
    </features>
 
    <configurations>
