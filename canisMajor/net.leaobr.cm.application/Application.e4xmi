@@ -68,7 +68,7 @@
     </sharedElements>
     <trimBars xmi:id="_VOV6ANTAEeGTY-uOtVc6Mg" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_ClppQK-7EeSE65YvKU3_OQ" elementId="net.leaobr.cm.application.toolbar.0">
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ClppQa-7EeSE65YvKU3_OQ" elementId="net.leaobr.cm.handledtoolitem.run" label="Run" iconURI="platform:/plugin/net.leaobr.cm.application/images/run-button.png" command="_10HQcK-6EeSE65YvKU3_OQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ClppQa-7EeSE65YvKU3_OQ" elementId="net.leaobr.cm.handledtoolitem.run" label="Run" iconURI="platform:/plugin/net.leaobr.cm.application/icons/run-button.png" command="_10HQcK-6EeSE65YvKU3_OQ"/>
       </children>
     </trimBars>
     <trimBars xmi:id="_VP1HwNTAEeGTY-uOtVc6Mg" elementId="org.eclipse.ui.trim.status" side="Bottom">
