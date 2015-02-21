@@ -9,7 +9,7 @@
    <launcherArgs>
       <programArgs>-clearPersistedState
       </programArgs>
-      <vmArgs>-Djava.library.path=${workspace_loc:plugins/cm-mitm/jpcap/lib/64bits}
+      <vmArgs>-Djava.library.path=${workspace_loc:plugins/cm-mitm/jpcap/lib/x${system_property:sun.arch.data.model}}
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
