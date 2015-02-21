@@ -15,7 +15,7 @@ public class JNetJammer {
 	private static ArrayList<String> blacklist;
 	private static ArrayList<String> ips_to_explore;
 
-	private sender ARPSender;
+	private Sender ARPSender;
 
 	private NetworkInterfaceAddress __get_inet4(NetworkInterface device) throws NullPointerException {
 		if (device == null) throw new NullPointerException("No device has been given! potato");
@@ -33,7 +33,7 @@ public class JNetJammer {
 		ips_to_explore = new ArrayList<String>();
 
 		try {
-			this.ARPSender = new sender(device);
+			this.ARPSender = new Sender(device);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -45,7 +45,7 @@ public class JNetJammer {
 			System.out.println(blacklist.toString()+"\n");
 		}
 
-		hostdiscover hosty = new hostdiscover(device, ips_to_explore);
+		Hostsdiscover hosty = new Hostsdiscover(device, ips_to_explore);
 		hosty.discover();
 		String gatewayip = hosty.getGatewayIp();
 		HashMap<String,String> ip_mac_list = hosty.getHosts();
@@ -57,7 +57,7 @@ public class JNetJammer {
 			e1.printStackTrace();
 		}
 		
-		arp fake = new arp(null);
+		Arp fake = new Arp(null);
 		byte[] fake_mac = new byte[] { (byte)Integer.parseInt("0",16),  (byte)Integer.parseInt("24",16),
                 (byte)Integer.parseInt("2b",16), (byte)Integer.parseInt("68",16),(byte)Integer.parseInt("4c",16),
                 (byte)Integer.parseInt("1b",16) };

@@ -8,7 +8,7 @@ import jpcap.JpcapSender;
 import jpcap.NetworkInterface;
 import jpcap.packet.Packet;
 
-public class sender {
+public class Sender {
 	private NetworkInterface device = null;
 
 	private JpcapSender sender;
@@ -19,7 +19,7 @@ public class sender {
 		this.sender = captor.getJpcapSenderInstance();
 	}
 	
-	public sender(NetworkInterface device) throws NullPointerException, IOException {
+	public Sender(NetworkInterface device) throws NullPointerException, IOException {
 		this.device = device;
 		if (this.device == null) throw new NullPointerException("No device has been given! sender");
 		

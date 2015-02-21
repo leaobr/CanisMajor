@@ -20,7 +20,7 @@ import jpcap.packet.EthernetPacket;
  * works you can check the official jpcap documentation(it also provides examples)
  * and wikipedia, these details are not covered into the code's comments
  */
-public class arp {
+public class Arp {
 	private NetworkInterface device;
 	private ARPPacket packet;
 	
@@ -101,7 +101,7 @@ public class arp {
 	 * takes as input a device(network interface)
 	 * also it initializes some headers of the arp packet
 	 */
-	public arp(NetworkInterface device){
+	public Arp(NetworkInterface device){
 		this.device = device;
 		
 		// define arp packet
