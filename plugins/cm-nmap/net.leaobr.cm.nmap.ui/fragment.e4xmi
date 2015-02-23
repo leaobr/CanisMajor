@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_05mscLa_EeS5-sPZZ582tg">
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_8ZBrYLa_EeS5-sPZZ582tg" featurename="children" parentElementId="net.leaobr.cm.application.partstack.customui">
-    <elements xsi:type="basic:Part" xmi:id="_p-81YLbCEeS5-sPZZ582tg" elementId="net.leaobr.cm.nmap.ui.main" contributionURI="bundleclass://net.leaobr.cm.nmap.ui/net.leaobr.cm.nmap.ui.NetworkViewPart" label="Nmap View"/>
-  </fragments>
-</fragment:ModelFragments>
